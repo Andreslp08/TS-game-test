@@ -74,8 +74,6 @@ export default class Vector2{
             this.x = this.x/m;
             this.y = this.y/m;
         }
-        console.log(this)
-      
     }
 
 
