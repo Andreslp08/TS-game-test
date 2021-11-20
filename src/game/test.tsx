@@ -36,7 +36,6 @@ export class GameTest extends GameObject{
         const offX = this.position.x + radius ;
 		const offY = this.position.y + radius  ;
         this.position.addVector(this.velocity); 
-        console.log(this.velocity.getMagnitude())
         if (offX >= this.screenLimits.x ) {
             this.velocity.x = -this.VELOCITY*deltaTime;
             // this.velocity.substractVector(new Vector2(this.VELOCITY*deltaTime,0));
