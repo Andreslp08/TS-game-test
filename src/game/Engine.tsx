@@ -1,4 +1,4 @@
-import { GameTest } from "./test";
+import { GameTest } from "../test/test";
 
 let fps_limit = 60;
 let fps = 0;
@@ -32,9 +32,10 @@ export class Engine {
             this.test.update(timeStep);
             deltaTime -= timeStep
         }
+        this.canvas.getContext('2d').clearRect(0,0,this.canvas.width, this.canvas.height);
         this.test.draw(this.canvas, deltaTime);
         //console test
-        console.log(`current time: ${Date.now()}`);
+        // console.log(`current time: ${Date.now()}`);
         // console.log(`current framerate: ${frameRate}`);
         // console.log(`previousFrame time: ${previousFrame}`);
         // console.log(`delta: ${deltaTime}`);
