@@ -76,6 +76,18 @@ export default class Vector2{
         }
     }
 
+    public rotate(radians:number):void{
+        const rx = (Math.cos(radians) * this.x) - (Math.sin(radians) *this.y);
+        const ry = (Math.sin(radians) * this.x) - (Math.cos(radians) *this.y);
+        this.x = rx;
+        this.y = ry;
+    }
+
+    public setDirection(radAngle:number){
+        this.x = Math.cos(radAngle)*this.getMagnitude();
+        this.y = Math.sin(radAngle)*this.getMagnitude();
+    }
+
 
 
 }
