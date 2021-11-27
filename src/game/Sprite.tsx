@@ -1,8 +1,8 @@
 
 import { Renderer } from "./interfaces/renderer";
-import Vector2 from "./math/Vector2";
+import Vector2 from "./math/vector2";
 import imgtest from "./assets/defaultSprite.png";
-import { Transform } from "./interfaces/transforms";
+import { Transform } from "./interfaces/transform";
 
 export class Sprite implements Renderer {
 	private image: HTMLImageElement;

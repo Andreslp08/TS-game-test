@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/style.css';
 import './styles/canvas-style.css';
-import { Engine } from './game/Engine';
+import { Engine } from './game/engine';
 
 function App() {
 
