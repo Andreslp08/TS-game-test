@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles/style.css';
 import './styles/canvas-style.css';
-import GameCanvas from './components/canvas/canvas';
 import { Engine } from './game/Engine';
 
 function App() {
