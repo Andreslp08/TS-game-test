@@ -1,9 +1,9 @@
-import GameObject from "../game/GameObject";
-import Vector2 from "../game/math/Vector2";
-import { Sprite } from "../game/Sprite";
-import { Transform } from "../game/interfaces/transforms";
+import GameObject from "../game/game-object";
+import Vector2 from "../game/math/vector2";
+import { Sprite } from "../game/sprite";
+import { Transform } from "../game/interfaces/transform";
 import { Renderer } from "../game/interfaces/renderer";
-import { MathUtil } from "../game/math/MathUtil";
+import { MathUtil } from "../game/math/math-util";
 
 const radius = 40;
 let escalar = 0.1;
